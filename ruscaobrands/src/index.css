@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'SequelSansBold';
+  src: url("/fonts/SequelSansBoldBody.otf");
+}
+@font-face {
+  font-family: 'SequelSansMediumBody';
+  src: url("/fonts/SequelSansMediumBody.otf");
+}
+:root{
+  --font1: 'SequelSansBold', sans-serif;
+  --font2: 'SequelSansMediumBody', sans-serif
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+}
