@@ -5,7 +5,6 @@ const Intro = () => {
   return (
     <IntroDiv>
         <div className='introImg'>
-          test
         </div>
         <div>
             <h3>RIO DE JANEIRO, BRAZIL.</h3>
