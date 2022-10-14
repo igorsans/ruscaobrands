@@ -13,10 +13,18 @@ const WorkStyle = styled.div`
       height: 221px;
     }
     & h3 {
+      margin-top: 30px;
       width: 769px;
       height: 245px;
       font-size: 30px;
     }
+  }
+  & .moreInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: red;
   }
 `;
 export default WorkStyle;
