@@ -9,11 +9,7 @@ const AboutMeStyle = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px 0px;
-    & button{
-    margin: 17px 0px;
-    width: 296px;
-    height: 63px;
-  }
+   
   }
   & h3 {
     font-size: 20px;

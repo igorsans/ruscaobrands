@@ -6,15 +6,15 @@ const WorkStyle = styled.div`
   flex-direction: column;
   & .togetherIntro {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     & h2 {
       font-size: 100px;
-      width: 692px;
+      width: 50%;
       height: 221px;
     }
     & h3 {
       margin-top: 30px;
-      width: 769px;
+      width: 40%;
       height: 245px;
       font-size: 30px;
     }
@@ -23,8 +23,9 @@ const WorkStyle = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    color: red;
+    & div {
+      width: 90%;
+    }
   }
 `;
 export default WorkStyle;
