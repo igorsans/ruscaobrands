@@ -11,7 +11,7 @@ const WorkTogether = () => {
           My methodology includes you in the design process. Get ready for lots
           of immersion, conversation and coffee! After all, extracting as much
           information and details as possible about your story is the secret to
-          a powerful and memorable brand.
+          a powerful and memorable brand. :&#41;
         </h3>
       </div>
       <div className="moreInfo">

@@ -6,9 +6,10 @@ const NavBar = styled.nav`
   gap: 10px;
   width: 50%;
   font-size: 20px;
-  color: white;
+  font-family: var(--light);
+  color: var(--color5);
   & a {
-    color: white;
+    color: var(--color5);
     text-decoration: none;
   }
   & div {

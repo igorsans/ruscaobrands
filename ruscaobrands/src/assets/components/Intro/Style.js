@@ -3,7 +3,8 @@ import styled from "styled-components";
 const IntroDiv = styled.div`
   margin: 0px 10%;
   & h3 {
-    color: #808286;
+    font-family: var(--light);
+    color: var(--color2);
     font-size: 26px;
     width: 338px;
     height: 30px;
@@ -11,7 +12,8 @@ const IntroDiv = styled.div`
     margin-top: 653px;
   }
   & h1 {
-    color: white;
+    font-family: var(--titulo);
+    color: var(--color3);
     width: 929px;
     height: 135px;
     font-size: 62px;
@@ -19,7 +21,7 @@ const IntroDiv = styled.div`
     margin-bottom: 112px;
   }
   & p {
-    font-family: var(--font2);
+    font-family: var(--corrido);
     color: #636569;
     width: 820.03px;
     height: 117.73px;

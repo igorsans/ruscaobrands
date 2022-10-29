@@ -6,6 +6,9 @@ const CasesStyle = styled.div`
     display: flex;
     flex-direction: column;
     & h2{
+        font-family: var(--titulo);
+        font-size: 38px;
+        color: var(--color3);
         margin: 25px 0px;
     }
     & .cases{
@@ -21,15 +24,16 @@ const CasesStyle = styled.div`
         width: 470px;
     }
     & .seeAll{
+        font-family: var(--light);
         text-transform: uppercase;
-        color: white;
+        color: var(--color3);
         align-self: center;
         width: 256px;
         height: 75px;
         background-color: rgba(0,0,0,0%);
         border-radius: 9.29px;
         border-style: outset;
-        border: 1px solid #F3F4F4;
+        border: 1px solid var(--color3);
         display: flex;
         gap: 28px;
         justify-content: center;

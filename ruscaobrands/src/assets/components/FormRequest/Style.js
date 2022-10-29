@@ -12,9 +12,11 @@ const SForm = styled.form`
         width: 105%;
     }
     & h4{
+        font-family: var(--light);
         font-size: 41px;
     }
     & .input{
+        font-family: var(--light);
         font-size: 22px;
         border-radius: 10px;
         height: 60px;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const ButtonWhite = styled.button`
-  background-color: #f3f4f4;
+  background-color: var(--color3);
+  font-family: var(--light);
   font-size: 21px;
   border-radius: 9px;
   display: flex;

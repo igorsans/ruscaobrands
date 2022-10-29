@@ -12,10 +12,13 @@ const AboutMeStyle = styled.div`
    
   }
   & h3 {
+    font-family: var(--light);
     font-size: 20px;
-    color: #636569;
+    color: var(--color4);
   }
   & h2 {
+    font-family: var(--titulo);
+    color: var(--color3);
     font-size: 54px;
     width: 475px;
     height: 429px;

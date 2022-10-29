@@ -10,7 +10,7 @@ const MoreInfo = ({titulo, text}) => {
     <InfoStyle>
       <div onClick={(e) =>handleInfo(e)} className="infoInt">
         <h3>{titulo}</h3>
-        <h3 >{more ? "-" : "+" } </h3>
+        <h3 className="InfoPlus">{more ? "-" : "+" } </h3>
       </div>
       <div className="textInfoInt">
         {

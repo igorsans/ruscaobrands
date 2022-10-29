@@ -8,10 +8,15 @@ const SContact = styled.div`
         width: 50%;
     }
     & h3{
+        font-family: var(--titulo);
+        color: var(--color3);
         font-size: 80px;
     }
     & p{
+        margin: 25px 0;
+        font-family: var(--corrido);
         font-size: 30px;
+        line-height: 1.2;
     }
     & a{
         color: #636569;

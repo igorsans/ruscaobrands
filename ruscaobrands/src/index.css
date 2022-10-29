@@ -1,14 +1,25 @@
 @font-face {
-  font-family: 'SequelSansBold';
-  src: url("/fonts/SequelSansBoldBody.otf");
+  font-family: 'SequelSansBoldDisp';
+  src: url("/fonts/SequelSansBoldDisp.otf");
 }
 @font-face {
   font-family: 'SequelSansMediumBody';
   src: url("/fonts/SequelSansMediumBody.otf");
 }
+@font-face {
+  font-family: 'SequelSansLightBody';
+  src: url("/fonts/SequelSansLightBody.otf");
+}
+
 :root{
-  --font1: 'SequelSansBold', sans-serif;
-  --font2: 'SequelSansMediumBody', sans-serif
+  --titulo: 'SequelSansBoldDisp', sans-serif;
+  --corrido: 'SequelSansMediumBody', sans-serif;
+  --light: 'SequelSansLightBody', sans-serif;
+  --color1: #000000;
+  --color2: #808286;
+  --color3: #F3F4F4;
+  --color4: #636569;
+  --color5: #FFFFFF;
 }
 *{
   margin: 0;
