@@ -1,8 +1,11 @@
 import React from 'react'
-// import Style from ''
-const CasePag = () => {
+import CaseComponent from './Style.js'
+const CasePag = ({ cases }) => {
+  console.log(cases)
   return (
-    <div>CasePag</div>
+    <CaseComponent>
+      <h1>{cases.titulo}</h1>
+    </CaseComponent>
   )
 }
 

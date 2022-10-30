@@ -18,6 +18,7 @@ const Routes = () => {
     console.log(obj)
     setCases(obj)
     setcaseState(true)
+    console.log(cases)
   }
   return (
     <BrowserRouter>
@@ -36,14 +37,11 @@ const Routes = () => {
               <Contact />
             </div>
             :
-            <CasePag />
+            <CasePag cases={cases} />
           }
         />
-        <Route path="case" element={
-          <CasePag />
-        } />
       </Switch>
-      <Footer />
+      <Footer caseState={caseState} />
     </BrowserRouter>
   );
 };

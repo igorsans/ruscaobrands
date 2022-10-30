@@ -1,11 +1,52 @@
-import React from "react";
-import SFooter from "./Style.js";
+import React, { useState } from "react";
+// import SFooter from "./Style.js";
 import Logo from "/Logo.png";
+import styled from "styled-components";
 
-const Footer = () => {
+const Footer = ({caseState}) => {
+  const SFooter = styled.footer`
+  background-color: ${!caseState? 'black' : 'white'};
+  color: ${caseState? 'black' : 'white'};
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .FMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 54px;
+    & .FNav,
+    .FContact {
+      display: flex;
+      gap: 23px;
+      justify-content: space-around;
+    }
+  }
+  & .FMainB {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 54px;
+    & .FNav,
+    .FContact {
+      display: flex;
+      gap: 23px;
+      justify-content: space-around;
+    }
+  }
+  & .FEnd {
+    margin-bottom: 49px;
+  }
+`;
+
+
   return (
-    <SFooter>
-      <div className="FMain">
+    <SFooter bgcolor={caseState}>
+      <div
+       className={!caseState? 'FMainB': 'FMain'}>
         <div>
           <img src={Logo} alt="logo" />
         </div>
