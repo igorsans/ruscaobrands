@@ -1,47 +1,38 @@
 import { useState } from "react";
-import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
-import AboutMe from "../components/AboutMe/AboutMe";
-import CasePag from "../components/CasePag/CasePag";
-// import Carousel from "../components/Carousel/Carousel";
-// import Case from "../components/Case/Case";
-import Cases from "../components/Cases/Cases";
-import Contact from "../components/Contact/Contact";
+import {
+  BrowserRouter,
+  Route,
+  Routes as Switch,
+  useNavigate,
+} from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Intro from "../components/Intro/Intro";
-import WorkTogether from "../components/WorkTogether/WorkTogether";
+import Home from "../../pages/home/home";
+import CasePag from "../components/CasePag/CasePag";
+import LangProvider from "../../Context/LangProvider";
 
 const Routes = () => {
-  const [caseState, setcaseState] = useState(false)
+  const [caseState, setcaseState] = useState(false);
   const [cases, setCases] = useState({});
-  const handleChange = (obj) =>{
-    console.log(obj)
-    setCases(obj)
-    setcaseState(true)
-    console.log(cases)
-  }
+  const handleCaseChange = (obj) => {
+    setCases(obj);
+    setcaseState(true);
+    console.log(caseState);
+    console.log(cases);
+  };
   return (
     <BrowserRouter>
-      <Header setcaseState={setcaseState} />
-      <Switch>
-        <Route
-          path="/"
-          element={
-            !caseState ?
-            <div>
-              <Intro />
-              <Cases setCases={handleChange}  />
-              <AboutMe />
-              {/* <Carousel/> */}
-              <WorkTogether />
-              <Contact />
-            </div>
-            :
-            <CasePag cases={cases} />
-          }
-        />
-      </Switch>
-      <Footer caseState={caseState} />
+      <LangProvider>
+        <Header setcaseState={setcaseState} />
+        <Switch>
+          <Route
+            path="/"
+            element={<Home handleCaseChange={handleCaseChange} />}
+          />
+          <Route path="cases" element={<CasePag cases={cases} />} />
+        </Switch>
+        <Footer caseState={caseState} />
+      </LangProvider>
     </BrowserRouter>
   );
 };
