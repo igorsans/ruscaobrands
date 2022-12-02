@@ -1,11 +1,11 @@
 import Logo from "/Logo.png";
-import Teste from "./Style.js";
+import StyledHeader from "./Style.js";
 import Nav from "../Nav/Nav.jsx";
 import { Link } from "react-router-dom";
 
 const Header = ({ setcaseState }) => {
   return (
-    <Teste>
+    <StyledHeader>
       <div className="header">
         <div className="logo">
           <Link onClick={(e) => setcaseState(false)} to="/">
@@ -14,7 +14,7 @@ const Header = ({ setcaseState }) => {
         </div>
         <Nav />
       </div>
-    </Teste>
+    </StyledHeader>
   );
 };
 
