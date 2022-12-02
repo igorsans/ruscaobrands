@@ -1,0 +1,20 @@
+{
+ "nav":{
+   "Projects":{
+      "PT": "Projetos",
+      "EN": "Projects"
+   },
+   "About" : {
+      "PT": "Sobre",
+      "EN" : "About"
+   },
+   "Metodology" :{
+      "PT": "Metodologia",
+      "EN": "Metodology"
+   },
+   "Contact" : {
+      "PT" : "Contato",
+      "EN" : "Contact"
+   }
+ }
+}
