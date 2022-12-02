@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import NavBar from "./Style";
 import { TbWorld } from "react-icons/tb";
+import { LangContext } from "../../../Context/LangProvider";
 
 const Nav = () => {
+  const langContext = useContext(LangContext)
   return (
     <NavBar>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
-      <a href="#">Metodology</a>
-      <a href="#">Contact</a>
+      <a href="#">{langContext.texts.nav.Projects[langContext.lang]}</a>
+      <a href="#">{langContext.texts.nav.About[langContext.lang]}</a>
+      <a href="#">{langContext.texts.nav.Metodology[langContext.lang]}</a>
+      <a href="#">{langContext.texts.nav.Contact[langContext.lang]}</a>
       <div>
         <TbWorld />
-        <p>EN</p>
-        <p>PT</p>
+        <p onClick={() =>langContext.setLang("EN")}>EN</p>
+        <p onClick={() =>langContext.setLang("PT")}>PT</p>
       </div>
     </NavBar>
   );
