@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import SFooter from "./Style.js";
 import Logo from "/Logo.png";
+import LogoB from "/Logob.png"
 import styled from "styled-components";
 
 const Footer = ({caseState}) => {
@@ -12,7 +13,12 @@ const Footer = ({caseState}) => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  & .logo{
+    width: 326;
+    height: 40px;
+  }
   & .FMain {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -22,6 +28,9 @@ const Footer = ({caseState}) => {
       display: flex;
       gap: 23px;
       justify-content: space-around;
+      & a{
+        color: black;
+      }
     }
   }
   & .FMainB {
@@ -48,7 +57,7 @@ const Footer = ({caseState}) => {
       <div
        className={!caseState? 'FMainB': 'FMain'}>
         <div>
-          <img src={Logo} alt="logo" />
+          <img className="logo" src={!caseState? Logo: LogoB} alt="logo" />
         </div>
         <nav className="FNav">
           <a target="_blank" href="">

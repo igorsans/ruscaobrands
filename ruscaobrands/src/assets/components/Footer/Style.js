@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const SFooter = styled.footer`
-  background-color: ${bgcolor? 'black' : 'white'};
+   background-color: ${({bgcolor}) => !caseState? 'black' : 'white'};
+  color: ${caseState? 'black' : 'white'};
   padding-top: 20px;
   width: 100%;
   display: flex;
@@ -21,7 +22,6 @@ const SFooter = styled.footer`
   }
   & .FMainB {
     width: 100%;
-    background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -35,7 +35,6 @@ const SFooter = styled.footer`
   }
   & .FEnd {
     margin-bottom: 49px;
-    background-color: black;
   }
 `;
 export default SFooter;

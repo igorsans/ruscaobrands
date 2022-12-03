@@ -14,7 +14,6 @@ const Cases = ({ handleCaseChange }) => {
       <h2>CASES</h2>
       <hr />
       <div className="cases">
-        <Link to={"/cases"}>
           <img
             onClick={() => handleCaseChange(caseteste)}
             className="casesImg"
@@ -26,7 +25,6 @@ const Cases = ({ handleCaseChange }) => {
           <img className="casesImg" src="/Biggies.jpg" alt="" />
           <img className="casesImg" src="/Biggies.jpg" alt="" />
           <img className="casesImg" src="/Biggies.jpg" alt="" />
-        </Link>
       </div>
       <button className="seeAll">
         See All <BsArrowRight />
