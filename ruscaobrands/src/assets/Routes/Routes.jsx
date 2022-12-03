@@ -9,6 +9,7 @@ import Header from "../components/Header/Header";
 import Home from "../../pages/home/home";
 import CasePag from "../components/CasePag/CasePag";
 import LangProvider from "../../Context/LangProvider";
+import About from "../../pages/about/about";
 
 const Routes = () => {
   const [caseState, setcaseState] = useState(false);
@@ -29,6 +30,7 @@ const Routes = () => {
             element={<Home handleCaseChange={handleCaseChange} />}
           />
           <Route path="cases" element={<CasePag cases={cases} />} />
+          <Route path="aboutme" element={<About/>}/>
         </Switch>
         <Footer caseState={caseState} />
       </LangProvider>
