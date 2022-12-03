@@ -2,9 +2,9 @@ import React from 'react'
 import ButtonWhite from './Style.js'
 import { BsArrowRight } from "react-icons/bs"
 
-const Button = ({text}) => {
+const Button = ({text,nav}) => {
   return (
-    <ButtonWhite>{text} <BsArrowRight/></ButtonWhite>
+    <ButtonWhite onClick={() => nav()}>{text} <BsArrowRight/></ButtonWhite>
   )
 }
 

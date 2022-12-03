@@ -12,5 +12,6 @@ const ButtonWhite = styled.button`
   margin: 17px 0px;
   width: 296px;
   height: 63px;
+  cursor: pointer;
 `;
 export default ButtonWhite;

@@ -1,7 +1,6 @@
 import React from "react";
 import CasesStyle from "./Style.js";
-import { BsArrowRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import ButtonB from "../Button/ButtonB.jsx";
 
 const Cases = ({ handleCaseChange }) => {
   const caseteste = {
@@ -14,21 +13,19 @@ const Cases = ({ handleCaseChange }) => {
       <h2>CASES</h2>
       <hr />
       <div className="cases">
-          <img
-            onClick={() => handleCaseChange(caseteste)}
-            className="casesImg"
-            src="/Biggies.jpg"
-            alt=""
-          />
-          <img className="casesImg" src="/Biggies.jpg" alt="" />
-          <img className="casesImg" src="/Biggies.jpg" alt="" />
-          <img className="casesImg" src="/Biggies.jpg" alt="" />
-          <img className="casesImg" src="/Biggies.jpg" alt="" />
-          <img className="casesImg" src="/Biggies.jpg" alt="" />
+        <img
+          onClick={() => handleCaseChange(caseteste)}
+          className="casesImg"
+          src="/Biggies.jpg"
+          alt=""
+        />
+        <img className="casesImg" src="/Biggies.jpg" alt="" />
+        <img className="casesImg" src="/Biggies.jpg" alt="" />
+        <img className="casesImg" src="/Biggies.jpg" alt="" />
+        <img className="casesImg" src="/Biggies.jpg" alt="" />
+        <img className="casesImg" src="/Biggies.jpg" alt="" />
       </div>
-      <button className="seeAll">
-        See All <BsArrowRight />
-      </button>
+      <ButtonB text={"see all"} />
     </CasesStyle>
   );
 };
