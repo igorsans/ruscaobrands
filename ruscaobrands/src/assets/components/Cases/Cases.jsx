@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import CasesStyle from "./Style.js";
 import ButtonB from "../Button/ButtonB.jsx";
+import { LangContext } from "../../../Context/LangProvider.jsx";
 
 const Cases = ({ handleCaseChange }) => {
   const caseteste = {
@@ -8,6 +9,7 @@ const Cases = ({ handleCaseChange }) => {
     descricao: "lorem ipsum etc aklsdjasd lkajsdakls asjkdaklsdjk askldjaskld",
     img: "test",
   };
+  const langContext = useContext(LangContext)
   return (
     <CasesStyle>
       <h2>CASES</h2>
@@ -25,7 +27,7 @@ const Cases = ({ handleCaseChange }) => {
         <img className="casesImg" src="/Biggies.jpg" alt="" />
         <img className="casesImg" src="/Biggies.jpg" alt="" />
       </div>
-      <ButtonB text={"see all"} />
+      <ButtonB text={langContext.texts.Cases.Btn[langContext.lang]} />
     </CasesStyle>
   );
 };

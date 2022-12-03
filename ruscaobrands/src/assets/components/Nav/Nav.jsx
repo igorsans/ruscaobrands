@@ -5,6 +5,7 @@ import { LangContext } from "../../../Context/LangProvider";
 
 const Nav = () => {
   const langContext = useContext(LangContext)
+  console.log(langContext.texts)
   return (
     <NavBar>
       <a href="#">{langContext.texts.nav.Projects[langContext.lang]}</a>

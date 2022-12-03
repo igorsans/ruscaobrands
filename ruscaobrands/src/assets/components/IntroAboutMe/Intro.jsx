@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LangContext } from "../../../Context/LangProvider.jsx";
 import StyledIntro from "./Style.js";
 
 const Intro = () => {
+  const langContext = useContext(LangContext)
   return (
     <StyledIntro>
       <h1>
-        I'm Bruno Ruscão, a brazilian designer
-        specialized in
-        <span> branding</span> and
-        <span> visual identity.</span>
+      {langContext.texts.AboutMePag.intro[langContext.lang][0]}
+        <span> {langContext.texts.AboutMePag.intro[langContext.lang][1]}</span> {langContext.texts.AboutMePag.intro[langContext.lang][2]}
+        <span> {langContext.texts.AboutMePag.intro[langContext.lang][3]}</span>
       </h1>
       <h2>
-      Ruscão Brands is the result of almost a decade of experience in design, whose focus has been on transforming authentic stories into memorable brands.
+      {langContext.texts.AboutMePag.sub[langContext.lang]}
       </h2>
     </StyledIntro>
   );

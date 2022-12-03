@@ -1,37 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LangContext } from "../../../Context/LangProvider.jsx";
 import MoreInfo from "../MoreInfo/MoreInfo.jsx";
 import WorkStyle from "./Style.js";
 
 const WorkTogether = () => {
+  const langContext = useContext(LangContext)
   return (
     <WorkStyle>
       <div className="togetherIntro">
-        <h2>We'll work together</h2>
+        <h2>{langContext.texts.WorkTogether.title[langContext.lang]}</h2>
         <h3>
-          My methodology includes you in the design process. Get ready for lots
-          of immersion, conversation and coffee! After all, extracting as much
-          information and details as possible about your story is the secret to
-          a powerful and memorable brand. :&#41;
+        {langContext.texts.WorkTogether.metodology[langContext.lang]}
         </h3>
       </div>
       <div className="moreInfo">
         <div>
-          <MoreInfo titulo="Immersion" 
-          text="Our first meeting, we'll sit down and hear the incredible story of your business. I'll send to you the briefing with several questions that will be essential for the story that we will write together going forward."
+          <MoreInfo titulo={langContext.texts.WorkTogether.immersion[langContext.lang]}
+          text={langContext.texts.WorkTogether.immersionText[langContext.lang]}
           />
           <MoreInfo 
-          titulo="Exploration"
-          text="Our first meeting, we'll sit down and hear the incredible story of your business. I'll send to you the briefing with several questions that will be essential for the story that we will write together going forward."
+          titulo={langContext.texts.WorkTogether.exploration[langContext.lang]}
+          text={langContext.texts.WorkTogether.explorationText[langContext.lang]}
           />
         </div>
         <div>
           <MoreInfo
-          titulo="Creation"
-          text="Our first meeting, we'll sit down and hear the incredible story of your business. I'll send to you the briefing with several questions that will be essential for the story that we will write together going forward."
+          titulo={langContext.texts.WorkTogether.create[langContext.lang]}
+          text={langContext.texts.WorkTogether.createText[langContext.lang]}
           />
           <MoreInfo
-          titulo="Delivery"
-          text="Our first meeting, we'll sit down and hear the incredible story of your business. I'll send to you the briefing with several questions that will be essential for the story that we will write together going forward."
+          titulo={langContext.texts.WorkTogether.delivery[langContext.lang]}
+          text={langContext.texts.WorkTogether.deliveryText[langContext.lang]}
           />
         </div>
       </div>

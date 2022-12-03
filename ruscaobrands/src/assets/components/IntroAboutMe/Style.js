@@ -10,7 +10,8 @@ color: var(--color1);
     margin-bottom: 42px;
 }
 & h2{
-    font-size: 25px;
+    width: 60%;
+    font-size: 22px;
     color: var(--color4);
     font-family: var(--light);
 }
