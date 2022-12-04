@@ -9,11 +9,14 @@ const AboutMe = () => {
   const langContext = useContext(LangContext)
   const navigate = useNavigate();
   return (
-    <AboutMeStyle>
+    <AboutMeStyle id='aboutme'>
         <div className='textAboutMe'>
             <h3>{langContext.texts.AboutMe.title[langContext.lang]}</h3>
             <h2>{langContext.texts.AboutMe.HowIDo[langContext.lang]}</h2>
-            <Button nav={() => navigate('/aboutme')} text={langContext.texts.AboutMe.Btn[langContext.lang]}/>
+            <Button nav={() => {
+              navigate('/aboutme')
+              window.scrollTo(0,0)
+              }} text={langContext.texts.AboutMe.Btn[langContext.lang]}/>
         </div>
         <div>
             <img src={me} alt="" />

@@ -11,7 +11,7 @@ const Cases = ({ handleCaseChange }) => {
   };
   const langContext = useContext(LangContext)
   return (
-    <CasesStyle>
+    <CasesStyle id="cases">
       <h2>CASES</h2>
       <hr />
       <div className="cases">

@@ -6,7 +6,7 @@ import SContact from "./Style.js";
 const Contact = () => {
   const langContext = useContext(LangContext);
   return (
-    <SContact>
+    <SContact id="contact">
       <div className="infoContact">
         <h3>
           {langContext.texts.Contact.title[langContext.lang][0]}

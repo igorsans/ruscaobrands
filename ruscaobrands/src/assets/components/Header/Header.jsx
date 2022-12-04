@@ -8,7 +8,15 @@ const Header = ({ setcaseState }) => {
     <StyledHeader>
       <div className="header">
         <div className="logo">
-          <Link onClick={(e) => setcaseState(false)} to="/">
+          <Link onClick={(e) =>{
+            setcaseState(false)
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+            })
+          } 
+          } to="/">
             <img src={Logo} alt="logo" />
           </Link>
         </div>

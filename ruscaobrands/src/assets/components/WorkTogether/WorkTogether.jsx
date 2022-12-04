@@ -6,7 +6,7 @@ import WorkStyle from "./Style.js";
 const WorkTogether = () => {
   const langContext = useContext(LangContext)
   return (
-    <WorkStyle>
+    <WorkStyle id="metodology">
       <div className="togetherIntro">
         <h2>{langContext.texts.WorkTogether.title[langContext.lang]}</h2>
         <h3>
