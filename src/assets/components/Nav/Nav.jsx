@@ -20,7 +20,7 @@ const Nav = () => {
       <Link className="nav-item" to="contact" spy={true} smooth={true} offset={-250} duration={500}>
         <button>{langContext.texts.nav.Contact[langContext.lang]}</button>
       </Link>
-      <div>
+      <div className="langs" >
         <TbWorld />
         <button className={langContext.lang == "EN" ? "ativo" : ""} onClick={() => langContext.setLang("EN")}>EN</button>
         <button className={langContext.lang == "PT" ? "ativo" : ""} onClick={() => langContext.setLang("PT")}>PT</button>

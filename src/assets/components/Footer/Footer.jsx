@@ -3,11 +3,9 @@ import React, { useState } from "react";
 import Logo from "/Logo.png";
 import LogoB from "/Logob.png"
 import styled from "styled-components";
-
-const Footer = ({caseState}) => {
-  const SFooter = styled.footer`
-  background-color: ${!caseState? 'black' : 'white'};
-  color: ${caseState? 'black' : 'white'};
+const SFooter = styled.footer`
+  background-color: ${props => props.color};
+  color: ${props => props.color};
   padding-top: 20px;
   width: 100%;
   display: flex;
@@ -47,13 +45,17 @@ const Footer = ({caseState}) => {
     }
   }
   & .FEnd {
+    color: ${props=> props.colorEnd};
     margin-bottom: 49px;
+    & span{
+      color: var(--color4);
+    }
   }
 `;
 
-
+const Footer = ({caseState}) => {
   return (
-    <SFooter bgcolor={caseState}>
+    <SFooter colorEnd={caseState ? "black" : "white"} color={!caseState ? "black" : "white"}>
       <div
        className={!caseState? 'FMainB': 'FMain'}>
         <div>

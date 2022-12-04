@@ -41,5 +41,9 @@ const NavBar = styled.nav`
   & .ativo{
     color: var(--color4);
   }
+  & .langs{
+    display: flex;
+    align-items: center;
+  }
 `;
 export default NavBar;
