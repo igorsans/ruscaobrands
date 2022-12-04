@@ -6,6 +6,7 @@ const AboutMeStyle = styled.div`
   align-items: center;
   color: white;
   & .textAboutMe {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     gap: 20px 0px;
@@ -22,6 +23,10 @@ const AboutMeStyle = styled.div`
     font-size: 54px;
     width: 475px;
     height: 429px;
+  }
+  & img {
+    width: 100%;
+    height: 100%;
   }
   
 `;

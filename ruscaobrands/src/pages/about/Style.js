@@ -5,7 +5,6 @@ const StyledAbout = styled.div`
   margin-top: 122px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 export default StyledAbout;
