@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { LangContext } from '../../../Context/LangProvider.jsx'
 import StyledMore from './Style.js'
-import me from '/me.png'
+import me from '/Bruno.png'
 
 const More = () => {
   const langContext = useContext(LangContext)
