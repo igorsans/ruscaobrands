@@ -12,16 +12,12 @@ const NavBar = styled.nav`
     color: var(--color5);
     cursor: pointer;
   }
-  & a:hover {
-    & button {
-      text-decoration: underline var(--color2) 2px;
-    }
-  }
   & .active {
     text-decoration: underline var(--color2) 3px;
     border-bottom: 3px solid (--color2);
-    & button{
-      color: var(--color4);
+    & button {
+      color: var(--color3);
+      text-decoration: underline 2px;
     }
   }
   & div {
@@ -32,18 +28,28 @@ const NavBar = styled.nav`
     cursor: pointer;
     background: none;
     color: var(--color3);
-    font-size: 20px;
+    font-size: 23px;
     font-family: var(--light);
   }
-  & button:hover{
+  & button:hover {
     color: var(--color4);
   }
-  & .ativo{
+  & .ativo {
     color: var(--color4);
   }
-  & .langs{
+  & .langs {
     display: flex;
     align-items: center;
+  }
+  @media (max-width: 768px) {
+    button {
+      font-size: 27px;
+    }
+  }
+  @media (max-width: 425px) {
+    button {
+      font-size: 15px;
+    }
   }
 `;
 export default NavBar;

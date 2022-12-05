@@ -16,6 +16,14 @@ const Header = styled.header `
         width: 325.33px;
         height: 39.9px;
     }
+    @media (max-width: 768px){
+        .header {
+            flex-direction: column;
+            padding: 0;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
 `
 
 export default Header

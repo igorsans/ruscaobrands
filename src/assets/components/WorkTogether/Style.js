@@ -27,5 +27,52 @@ const WorkStyle = styled.div`
       width: 90%;
     }
   }
+  @media (max-width: 1440px) {
+    .togetherIntro {
+      & h2 {
+        font-size: 80px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .togetherIntro {
+      & h2 {
+        font-size: 60px;
+      }
+      & h3 {
+        font-size: 25px;
+        width: 50%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin: 100px 10%;
+    .togetherIntro {
+      & h2 {
+        font-size: 45px;
+      }
+      & h3 {
+        font-size: 20px;
+      }
+    }
+    .moreInfo{
+      flex-direction: column;
+      & div {
+      width: 100%;
+    }
+    }
+  }
+  @media (max-width: 425px) {
+    .togetherIntro {
+      flex-direction: column;
+      & h2 {
+        font-size: 60px;
+      }
+      & h3 {
+        font-size: 25px;
+        width: 100%;
+      }
+    }
+  }
 `;
 export default WorkStyle;

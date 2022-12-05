@@ -1,59 +1,10 @@
-import React, { useState } from "react";
-// import SFooter from "./Style.js";
+import React from "react";
+import SFooter from "./Style.js";
 import Logo from "/Logo.png";
 import LogoB from "/Logob.png"
-import styled from "styled-components";
-const SFooter = styled.footer`
-  background-color: ${props => props.color};
-  color: ${props => props.color};
-  padding-top: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  & .logo{
-    width: 326;
-    height: 40px;
-  }
-  & .FMain {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin-bottom: 54px;
-    & .FNav,
-    .FContact {
-      display: flex;
-      gap: 23px;
-      justify-content: space-around;
-      & a{
-        color: black;
-      }
-    }
-  }
-  & .FMainB {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin-bottom: 54px;
-    & .FNav,
-    .FContact {
-      display: flex;
-      gap: 23px;
-      justify-content: space-around;
-    }
-  }
-  & .FEnd {
-    color: ${props=> props.colorEnd};
-    margin-bottom: 49px;
-    & span{
-      color: var(--color4);
-    }
-  }
-`;
 
-const Footer = ({caseState, inHome}) => {
+
+const Footer = ({inHome}) => {
   return (
     <SFooter colorEnd={!inHome ? "black" : "white"} color={inHome ? "black" : "white"}>
       <div

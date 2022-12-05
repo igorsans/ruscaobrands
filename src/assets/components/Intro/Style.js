@@ -28,7 +28,7 @@ const IntroDiv = styled.div`
     font-size: 30px;
     text-align: left;
   }
-  & .introImg{
+  & .introImg {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -39,6 +39,37 @@ const IntroDiv = styled.div`
     margin-right: 10%;
     background-image: url("/Grupo17.png");
     background-repeat: no-repeat;
+  }
+  @media (max-width: 1024px) {
+    & h1 {
+      width: 100%;
+    }
+    & p {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    & .introImg {
+      margin-right: 0%;
+      width: 800px;
+      background-size: contain;
+    }
+  }
+  @media (max-width: 425px) {
+    & .introImg {
+      width: 425px;
+      height: 400px;
+    }
+    & h3 {
+      margin-top: 500px;
+    }
+    & h1{
+      font-size: 50px;
+      height: 190px;
+    }
+    & p{
+      margin-bottom: 100px;
+    }
   }
 `;
 export default IntroDiv;

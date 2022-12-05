@@ -19,11 +19,11 @@ const CasesStyle = styled.div`
     flex-wrap: wrap;
     gap: 15px;
   }
-    & .casesImg {
-      height: 317px;
-      width: 470px;
-      cursor: pointer;
-    }
+  & .casesImg {
+    height: 317px;
+    width: 470px;
+    cursor: pointer;
+  }
   & .seeAll {
     font-family: var(--light);
     text-transform: uppercase;
@@ -40,6 +40,15 @@ const CasesStyle = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 26px;
+  }
+  @media (max-width: 425px) {
+    & .casesImg {
+      height: 317px;
+      width: 425px;
+    }
+    & .cases {
+      gap: 1px;
+    }
   }
 `;
 export default CasesStyle;

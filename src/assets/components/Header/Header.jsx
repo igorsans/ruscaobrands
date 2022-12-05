@@ -8,15 +8,17 @@ const Header = ({ setInHome }) => {
     <StyledHeader>
       <div className="header">
         <div className="logo">
-          <Link onClick={(e) =>{
-            setInHome(true)
-            window.scrollTo({
-              top: 0,
-              left: 0,
-              behavior: 'smooth'
-            })
-          } 
-          } to="/">
+          <Link
+            onClick={(e) => {
+              setInHome(true);
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+            }}
+            to="/"
+          >
             <img src={Logo} alt="logo" />
           </Link>
         </div>

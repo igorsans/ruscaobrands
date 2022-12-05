@@ -18,5 +18,25 @@ color: var(--color1);
     & span{
         color: var(--color6) ;
     }
+    @media (max-width: 1440px){
+        h2{
+            font-size: 30px;
+            width: 100%;
+        }
+    }
+    @media (max-width: 768px){
+        h1{
+            width: 100%;
+            font-size: 55px;
+        }
+    }
+    @media (max-width: 425px){
+        h1{
+            font-size: 35px;
+        }
+        h2{
+            font-size: 25px;
+        }
+    }
 `
 export default StyledIntro
