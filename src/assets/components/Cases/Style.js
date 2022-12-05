@@ -41,6 +41,18 @@ const CasesStyle = styled.div`
     align-items: center;
     font-size: 26px;
   }
+  @media (max-width: 1440px){
+    & .casesImg {
+      height: 217px;
+      width: 325px;
+    }
+  }
+  @media (max-width: 768px){
+    & .casesImg {
+      height: 150px;
+      width: 258px;
+    }
+  }
   @media (max-width: 425px) {
     & .casesImg {
       height: 317px;
