@@ -20,14 +20,14 @@ const Cases = ({ handleCaseChange }) => {
         <img
           onClick={() => handleCaseChange(caseteste)}
           className="casesImg"
-          src={Logo}
+          src={Biggies}
           alt=""
         />
-        <img className="casesImg" src={Logo} alt="" />
-        <img className="casesImg" src={Logo} alt="" />
-        <img className="casesImg" src={Logo} alt="" />
-        <img className="casesImg" src={Logo} alt="" />
-        <img className="casesImg" src={Logo} alt="" />
+        <img className="casesImg" src={Biggies} alt="" />
+        <img className="casesImg" src={Biggies} alt="" />
+        <img className="casesImg" src={Biggies} alt="" />
+        <img className="casesImg" src={Biggies} alt="" />
+        <img className="casesImg" src={Biggies} alt="" />
       </div>
       <ButtonB text={langContext.texts.Cases.Btn[langContext.lang]} />
     </CasesStyle>

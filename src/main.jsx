@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Routes from "./assets/Routes/Routes.jsx";
-import LangProvider from "./Context/LangProvider";
+import LangProvider from "./Context/LangProvider.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
