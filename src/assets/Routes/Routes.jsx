@@ -5,7 +5,7 @@ import Header from "../components/Header/Header";
 import Home from "../../pages/home/home";
 import CasePag from "../components/CasePag/CasePag";
 import About from "../../pages/about/about";
-import { LangContext } from "../../Context/LangProvider";
+import LangProvider, { LangContext } from "../../Context/LangProvider";
 
 const Routes = () => {
   const [caseState, setcaseState] = useState(false);
@@ -22,20 +22,20 @@ const Routes = () => {
     langContext.setLang(localLang);
   }, []);
   return (
-      <BrowserRouter>
-        <Header setInHome={setInHome} />
-        <Switch>
-          <Route
-            path="/"
-            element={
-              <Home setInHome={setInHome} handleCaseChange={handleCaseChange} />
-            }
-          />
-          <Route path="/cases" element={<CasePag cases={cases} />} />
-          <Route path="aboutme" element={<About setInHome={setInHome} />} />
-        </Switch>
-        <Footer caseState={caseState} inHome={inHome} />
-      </BrowserRouter>
+    <BrowserRouter>
+      <Header setInHome={setInHome} />
+      <Switch>
+        <Route
+          path="/"
+          element={
+            <Home setInHome={setInHome} handleCaseChange={handleCaseChange} />
+          }
+        />
+        <Route path="/cases" element={<CasePag cases={cases} />} />
+        <Route path="aboutme" element={<About setInHome={setInHome} />} />
+      </Switch>
+      <Footer caseState={caseState} inHome={inHome} />
+    </BrowserRouter>
   );
 };
 
