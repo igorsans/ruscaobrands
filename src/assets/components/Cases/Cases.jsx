@@ -3,7 +3,6 @@ import CasesStyle from "./Style.js";
 import ButtonB from "../Button/ButtonB.jsx";
 import { LangContext } from "../../../Context/LangProvider.jsx";
 import Biggies from "/Biggies.png";
-import Logo from "/Logo.png";
 
 const Cases = ({ handleCaseChange }) => {
   const caseteste = {
