@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Home from "../../pages/home/home";
 import CasePag from "../components/CasePag/CasePag";
 import About from "../../pages/about/about";
+import { LangContext } from "../../Context/LangProvider";
 
 const Routes = () => {
   const [caseState, setcaseState] = useState(false);
