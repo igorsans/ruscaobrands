@@ -4,12 +4,12 @@ import Contact from '../../assets/components/MoreAboutContact/Contact.jsx'
 import More from '../../assets/components/MoreAboutMe/More.jsx'
 import StyledAbout from './Style.js'
 
-const About = () => {
+const About = ({setInHome}) => {
   return (
     <StyledAbout>
         <Intro/>
         <More/>
-        <Contact/>
+        <Contact setInHome={setInHome} />
     </StyledAbout>
   )
 }

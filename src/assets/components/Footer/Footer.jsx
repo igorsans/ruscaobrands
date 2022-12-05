@@ -53,13 +53,13 @@ const SFooter = styled.footer`
   }
 `;
 
-const Footer = ({caseState}) => {
+const Footer = ({caseState, inHome}) => {
   return (
-    <SFooter colorEnd={caseState ? "black" : "white"} color={!caseState ? "black" : "white"}>
+    <SFooter colorEnd={!inHome ? "black" : "white"} color={inHome ? "black" : "white"}>
       <div
-       className={!caseState? 'FMainB': 'FMain'}>
+       className={inHome? 'FMainB': 'FMain'}>
         <div>
-          <img className="logo" src={!caseState? Logo: LogoB} alt="logo" />
+          <img className="logo" src={inHome? Logo: LogoB} alt="logo" />
         </div>
         <nav className="FNav">
           <a target="_blank" href="">

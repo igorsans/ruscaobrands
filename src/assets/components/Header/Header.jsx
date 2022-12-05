@@ -3,13 +3,13 @@ import StyledHeader from "./Style.js";
 import Nav from "../Nav/Nav.jsx";
 import { Link } from "react-router-dom";
 
-const Header = ({ setcaseState }) => {
+const Header = ({ setInHome }) => {
   return (
     <StyledHeader>
       <div className="header">
         <div className="logo">
           <Link onClick={(e) =>{
-            setcaseState(false)
+            setInHome(true)
             window.scrollTo({
               top: 0,
               left: 0,

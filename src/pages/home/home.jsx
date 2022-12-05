@@ -5,12 +5,12 @@ import Contact from "../../assets/components/Contact/Contact";
 import Intro from "../../assets/components/Intro/Intro";
 import WorkTogether from "../../assets/components/WorkTogether/WorkTogether";
 
-const Home = ({handleCaseChange}) => {
+const Home = ({handleCaseChange, setInHome}) => {
   return (
     <>
       <Intro />
       <Cases handleCaseChange={handleCaseChange} />
-      <AboutMe />
+      <AboutMe setInHome={setInHome} />
       {/* <Carousel/> */}
       <WorkTogether />
       <Contact />
