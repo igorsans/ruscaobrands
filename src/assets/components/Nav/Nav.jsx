@@ -6,6 +6,10 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   const langContext = useContext(LangContext);
+  const saveLang = (lang) => {
+    langContext.setLang(lang)
+    localStorage.setItem('lang', lang);
+  }
   return (
     <NavBar>
       <Link to="cases" spy={true} smooth={true} offset={-100} duration={500}>
@@ -22,8 +26,8 @@ const Nav = () => {
       </Link>
       <div className="langs" >
         <TbWorld />
-        <button className={langContext.lang == "EN" ? "ativo" : ""} onClick={() => langContext.setLang("EN")}>EN</button>
-        <button className={langContext.lang == "PT" ? "ativo" : ""} onClick={() => langContext.setLang("PT")}>PT</button>
+        <button className={langContext.lang == "EN" ? "ativo" : ""} onClick={() => saveLang("EN")}>EN</button>
+        <button className={langContext.lang == "PT" ? "ativo" : ""} onClick={() => saveLang("PT")}>PT</button>
       </div>
     </NavBar>
   );

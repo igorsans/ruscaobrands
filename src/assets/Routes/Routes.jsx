@@ -1,14 +1,10 @@
-import { useState } from "react";
-import {
-  BrowserRouter,
-  Route,
-  Routes as Switch,
-} from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Home from "../../pages/home/home";
 import CasePag from "../components/CasePag/CasePag";
-import LangProvider from "../../Context/LangProvider";
+import { LangContext } from "../../Context/LangProvider";
 import About from "../../pages/about/about";
 
 const Routes = () => {
@@ -17,23 +13,26 @@ const Routes = () => {
   const handleCaseChange = (obj) => {
     setCases(obj);
     setcaseState(true);
-    console.log(caseState);
-    console.log(cases);
   };
+  const [inHome , setInHome] = useState(true)
+  const langContext = useContext(LangContext);
+
+  useEffect(() => {
+    const localLang = localStorage.getItem("lang");
+    langContext.setLang(localLang);
+  }, []);
   return (
     <BrowserRouter>
-      <LangProvider>
-        <Header setcaseState={setcaseState} />
-        <Switch>
-          <Route
-            path="/"
-            element={<Home handleCaseChange={handleCaseChange} />}
-          />
-          <Route path="cases" element={<CasePag cases={cases} />} />
-          <Route path="aboutme" element={<About/>}/>
-        </Switch>
-        <Footer caseState={caseState} />
-      </LangProvider>
+      <Header setInHome={setInHome} />
+      <Switch>
+        <Route
+          path="/"
+          element={<Home setInHome={setInHome} handleCaseChange={handleCaseChange} />}
+        />
+        <Route path="cases" element={<CasePag cases={cases} />} />
+        <Route path="aboutme" element={<About setInHome={setInHome} />} />
+      </Switch>
+      <Footer caseState={caseState} inHome={inHome} />
     </BrowserRouter>
   );
 };

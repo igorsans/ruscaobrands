@@ -6,7 +6,6 @@ const LangProvider = ({ children }) => {
   const [lang, setLang] = useState("EN");
   const changeLag = () =>{
     setLang("PT")
-    console.log(lang)
   }
   const context = {
     lang: lang,
