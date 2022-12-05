@@ -23,18 +23,20 @@ const Routes = () => {
   }, []);
   return (
     <BrowserRouter>
-      <Header setInHome={setInHome} />
-      <Switch>
-        <Route
-          path="/"
-          element={
-            <Home setInHome={setInHome} handleCaseChange={handleCaseChange} />
-          }
-        />
-        <Route path="/cases" element={<CasePag cases={cases} />} />
-        <Route path="aboutme" element={<About setInHome={setInHome} />} />
-      </Switch>
-      <Footer caseState={caseState} inHome={inHome} />
+      <LangProvider>
+        <Header setInHome={setInHome} />
+        <Switch>
+          <Route
+            path="/"
+            element={
+              <Home setInHome={setInHome} handleCaseChange={handleCaseChange} />
+            }
+          />
+          <Route path="/cases" element={<CasePag cases={cases} />} />
+          <Route path="aboutme" element={<About setInHome={setInHome} />} />
+        </Switch>
+        <Footer caseState={caseState} inHome={inHome} />
+      </LangProvider>
     </BrowserRouter>
   );
 };
