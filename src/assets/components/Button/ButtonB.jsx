@@ -4,7 +4,7 @@ import StyledButton from './StyleB.js'
 
 const ButtonB = ({text,nav}) => {
   return (
-    <StyledButton>
+    <StyledButton onClick={()=> nav()}>
         {text} <BsArrowRight/>
     </StyledButton>
   )
