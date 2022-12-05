@@ -99,8 +99,8 @@
          "EN": ["Say Hello,","I wanna listen","to your story."]
       },
       "contact" : {
-         "PT": ["Entre em contato através do formulário ao lado.", "Se preferir, envie um email para"],
-         "EN": ["Get in touch using the form on the side.", "If you prefer, send an email to"]
+         "PT": ["Entre em contato através do formulário.", "Se preferir, envie um email para"],
+         "EN": ["Get in touch using the form.", "If you prefer, send an email to"]
       }
   },
   "Forms": {
