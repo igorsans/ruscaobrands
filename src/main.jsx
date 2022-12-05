@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Routes from "./assets/routes/routes";
+import Routes from "./assets/routes/routes.jsx";
 import LangProvider from "./Context/LangProvider";
 import "./index.css";
 
