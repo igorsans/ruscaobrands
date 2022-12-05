@@ -15,17 +15,17 @@ const Cases = ({ handleCaseChange }) => {
       <h2>CASES</h2>
       <hr />
       <div className="cases">
-        {/* <img
+        <img
           onClick={() => handleCaseChange(caseteste)}
           className="casesImg"
           src="/Biggies.jpg"
           alt=""
         />
-        <img className="casesImg" src={require("/Biggies.jpg")} alt="" />
         <img className="casesImg" src="/Biggies.jpg" alt="" />
         <img className="casesImg" src="/Biggies.jpg" alt="" />
         <img className="casesImg" src="/Biggies.jpg" alt="" />
-        <img className="casesImg" src="/Biggies.jpg" alt="" /> */}
+        <img className="casesImg" src="/Biggies.jpg" alt="" />
+        <img className="casesImg" src="/Biggies.jpg" alt="" />
       </div>
       <ButtonB text={langContext.texts.Cases.Btn[langContext.lang]} />
     </CasesStyle>
