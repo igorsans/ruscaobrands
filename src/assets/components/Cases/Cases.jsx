@@ -3,6 +3,7 @@ import CasesStyle from "./Style.js";
 import ButtonB from "../Button/ButtonB.jsx";
 import { LangContext } from "../../../Context/LangProvider.jsx";
 import Biggies from "/Biggies.png";
+import Logo from "/Logo.png";
 
 const Cases = ({ handleCaseChange }) => {
   const caseteste = {
@@ -19,14 +20,14 @@ const Cases = ({ handleCaseChange }) => {
         <img
           onClick={() => handleCaseChange(caseteste)}
           className="casesImg"
-          src={Biggies}
+          src={Logo}
           alt=""
         />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
+        <img className="casesImg" src={Logo} alt="" />
+        <img className="casesImg" src={Logo} alt="" />
+        <img className="casesImg" src={Logo} alt="" />
+        <img className="casesImg" src={Logo} alt="" />
+        <img className="casesImg" src={Logo} alt="" />
       </div>
       <ButtonB text={langContext.texts.Cases.Btn[langContext.lang]} />
     </CasesStyle>
