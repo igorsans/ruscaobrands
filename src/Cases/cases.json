@@ -1,13 +1,68 @@
 {
-     "1" : {
-        "id": 1,
+     "6" : {
+        "id": 6,
         "title": "Biggies",
         "about" : "Criar um sistema visual que gere identificação dopúblico de hoje com o Hip-Hop dos anos 90. A marca deve transmitir características únicas da época e reforçar a nostalgia, sem esquecer de criar novasmemórias e tendências para colocar a hamburgueria em um lugar de destaque.",
-        "imgDisplay" : "",
+        "imgDisplay" : "/Biggies.png",
         "imgShow": "",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         "images" : [
             ""
+        ]
+     },
+     "5" : {
+        "id": 5,
+        "title": "Biggies",
+        "about" : "Criar um sistema visual que gere identificação dopúblico de hoje com o Hip-Hop dos anos 90. A marca deve transmitir características únicas da época e reforçar a nostalgia, sem esquecer de criar novasmemórias e tendências para colocar a hamburgueria em um lugar de destaque.",
+        "imgDisplay" : "/Biggies.png",
+        "imgShow": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "images" : [
+            ""
+        ]
+     },
+     "4" : {
+        "id": 4,
+        "title": "Biggies",
+        "about" : "Criar um sistema visual que gere identificação dopúblico de hoje com o Hip-Hop dos anos 90. A marca deve transmitir características únicas da época e reforçar a nostalgia, sem esquecer de criar novasmemórias e tendências para colocar a hamburgueria em um lugar de destaque.",
+        "imgDisplay" : "/Biggies.png",
+        "imgShow": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "images" : [
+            ""
+        ]
+     },
+     "3" : {
+        "id": 3,
+        "title": "Biggies",
+        "about" : "Criar um sistema visual que gere identificação dopúblico de hoje com o Hip-Hop dos anos 90. A marca deve transmitir características únicas da época e reforçar a nostalgia, sem esquecer de criar novasmemórias e tendências para colocar a hamburgueria em um lugar de destaque.",
+        "imgDisplay" : "/Biggies.png",
+        "imgShow": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "images" : [
+            ""
+        ]
+     },
+     "2" : {
+        "id": 2,
+        "title": "Biggies",
+        "about" : "Criar um sistema visual que gere identificação dopúblico de hoje com o Hip-Hop dos anos 90. A marca deve transmitir características únicas da época e reforçar a nostalgia, sem esquecer de criar novasmemórias e tendências para colocar a hamburgueria em um lugar de destaque.",
+        "imgDisplay" : "/Biggies.png",
+        "imgShow": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "images" : [
+            ""
+        ]
+     },
+     "1" : {
+        "id": 1,
+        "title": "Biggies",
+        "about" : "Criar um sistema visual que gere identificação dopúblico de hoje com o Hip-Hop dos anos 90. A marca deve transmitir características únicas da época e reforçar a nostalgia, sem esquecer de criar novasmemórias e tendências para colocar a hamburgueria em um lugar de destaque.",
+        "imgDisplay" : "/BIGGIES.jpg",
+        "imgShow": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "images" : [
+            "/BIGGIES.jpg" , "/BIGGIES.jpg" , "/BIGGIES.jpg"
         ]
      }
 }

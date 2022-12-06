@@ -3,45 +3,40 @@ import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Home from "../../pages/home/home";
-import CasePag from "../components/CasePag/CasePag";
+import CasePag from "../../pages/casePag/CasePag";
 import About from "../../pages/about/about";
 import LangProvider, { LangContext } from "../../Context/LangProvider";
 
 const Routes = () => {
-  const [caseState, setcaseState] = useState(false);
-  const [cases, setCases] = useState({});
   const handleCaseChange = (obj) => {
-    setCases(obj);
-    setcaseState(true);
+    localStorage.setItem("case", JSON.stringify(obj));
   };
   const [inHome, setInHome] = useState(true);
   const langContext = useContext(LangContext);
 
   useEffect(() => {
     const localLang = localStorage.getItem("lang");
-    if (localLang){
+    if (localLang) {
       langContext.setLang(localLang);
     } else {
       langContext.setLang("EN");
     }
   }, []);
   return (
-    // <LangProvider>
-      <BrowserRouter>
-        <Header setInHome={setInHome} />
-        <Switch>
-          <Route
-            path="/"
-            element={
-              <Home setInHome={setInHome} handleCaseChange={handleCaseChange} />
-            }
-          />
-          <Route path="/cases" element={<CasePag cases={cases} />} />
-          <Route path="aboutme" element={<About setInHome={setInHome} />} />
-        </Switch>
-        <Footer caseState={caseState} inHome={inHome} />
-      </BrowserRouter>
-    // </LangProvider>
+    <BrowserRouter>
+      <Header setInHome={setInHome} />
+      <Switch>
+        <Route
+          path="/"
+          element={
+            <Home setInHome={setInHome} handleCaseChange={handleCaseChange} />
+          }
+        />
+        <Route path="cases" element={<CasePag setInHome={setInHome} />} />
+        <Route path="aboutme" element={<About setInHome={setInHome} />} />
+      </Switch>
+      <Footer inHome={inHome} />
+    </BrowserRouter>
   );
 };
 

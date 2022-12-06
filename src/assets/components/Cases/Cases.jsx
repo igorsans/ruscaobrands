@@ -3,30 +3,35 @@ import CasesStyle from "./Style.js";
 import ButtonB from "../Button/ButtonB.jsx";
 import { LangContext } from "../../../Context/LangProvider.jsx";
 import Biggies from "/Biggies.png";
+import casesList from "../../../Cases/cases.json";
+import { useNavigate } from "react-router-dom";
 
-const Cases = ({ handleCaseChange }) => {
-  const caseteste = {
-    titulo: "testando",
-    descricao: "lorem ipsum etc aklsdjasd lkajsdakls asjkdaklsdjk askldjaskld",
-    img: "test",
+const Cases = ({ handleCaseChange, setInHome }) => {
+  const navigate = useNavigate();
+  const langContext = useContext(LangContext);
+  const cases = Object.keys(casesList);
+  const changeCase = (obj) => {
+    setInHome(false);
+    navigate("/cases");
+    handleCaseChange(obj);
   };
-  const langContext = useContext(LangContext)
   return (
     <CasesStyle id="cases">
       <h2>CASES</h2>
       <hr />
       <div className="cases">
-        <img
-          onClick={() => handleCaseChange(caseteste)}
-          className="casesImg"
-          src={"/Biggies.png"}
-          alt=""
-        />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
-        <img className="casesImg" src={Biggies} alt="" />
+        {cases.map((item, index) =>
+          index < 6 ? (
+            <img
+              onClick={() => changeCase(casesList[item])}
+              key={casesList[item].id}
+              className="casesImg"
+              src={casesList[item].imgDisplay}
+            />
+          ) : (
+            ""
+          )
+        )}
       </div>
       <ButtonB text={langContext.texts.Cases.Btn[langContext.lang]} />
     </CasesStyle>
