@@ -19,7 +19,7 @@ const Cases = ({ handleCaseChange }) => {
         <img
           onClick={() => handleCaseChange(caseteste)}
           className="casesImg"
-          src={Biggies}
+          src={"/Biggies.png"}
           alt=""
         />
         <img className="casesImg" src={Biggies} alt="" />
