@@ -19,11 +19,15 @@ const Routes = () => {
 
   useEffect(() => {
     const localLang = localStorage.getItem("lang");
-    langContext.setLang(localLang);
+    if (localLang){
+      langContext.setLang(localLang);
+    } else {
+      langContext.setLang("EN");
+    }
   }, []);
   return (
-    <BrowserRouter>
-      <LangProvider>
+    // <LangProvider>
+      <BrowserRouter>
         <Header setInHome={setInHome} />
         <Switch>
           <Route
@@ -36,8 +40,8 @@ const Routes = () => {
           <Route path="aboutme" element={<About setInHome={setInHome} />} />
         </Switch>
         <Footer caseState={caseState} inHome={inHome} />
-      </LangProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    // </LangProvider>
   );
 };
 
