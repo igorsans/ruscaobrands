@@ -38,127 +38,160 @@
     }
   },
   "AboutMe": {
-   "title" : {
+    "title": {
       "PT": "ESPECIALISTA EM DESIGN DE MARCAS.",
-      "EN" : "BRAND DESIGNER SPECIALIST."
-   },
-   "HowIDo": {
+      "EN": "BRAND DESIGNER SPECIALIST."
+    },
+    "HowIDo": {
       "PT": "Eu ajudo a sua marca a se destacar dos seus concorrentes construindo uma conexão autêntica com seu público.",
       "EN": "I help your brand stand out from your competitors by building an authentic connection with your audience."
-   },
-   "Btn" : {
+    },
+    "Btn": {
       "PT": "MAIS SOBRE MIM",
-      "EN":"MORE ABOUT ME"
-   }
+      "EN": "MORE ABOUT ME"
+    }
   },
-  "WorkTogether" : {
-   "title" : {
-      "PT" : "Nós trabalhamos juntos",
-      "EN" : "We'll work together"
-   },
-   "metodology": {
+  "WorkTogether": {
+    "title": {
+      "PT": "Nós trabalhamos juntos",
+      "EN": "We'll work together"
+    },
+    "metodology": {
       "PT": "Minha metodologia inclui você no processo de design. Prepare-se para muita imersão, conversas e café! Afinal, extrair o máximo de informações e detalhes sobre a sua história é o segredo para criarmos uma marca poderosa e memorável.",
       "EN": "My methodology includes you in the design process. Get ready for lots of immersion, conversation and coffee! After all, extracting as much information and details as possible about your story is the secret to a powerful and memorable brand. :)"
-   },
-   "immersion" : {
+    },
+    "immersion": {
       "PT": "Imersão",
       "EN": "Immersion"
-   },
-   "immersionText": {
+    },
+    "immersionText": {
       "PT": "Nosso primeiro encontro sentaremos e ouvirei a história incrível do seu negócio. Teremos o briefing com várias perguntas que serão essenciais para a história que escreveremos juntos daqui para frente.",
       "EN": "Our first meeting, we'll sit down and hear the incredible story of your business. I'll send to you the briefing with several questions that will be essential for the story that we will write together going forward."
-   },
-   "exploration" : {
+    },
+    "exploration": {
       "PT": "Explorar",
-      "EN" : "Exploration"
-   },
-   "explorationText" : {
+      "EN": "Exploration"
+    },
+    "explorationText": {
       "PT": "Hora de ler e rever a história escrita até aqui. Vou me aprofundar ainda mais no seu negócio para entender suas dores e necessidades. Também farei uma pesquisa incrível de referências visuais e estratégicas para nossa reunião de moodboard.",
-      "EN" : "Time to read and review the history written so far. I will delve even deeper into your business to understand your pains and needs. I'll also be doing some incredible research for visual and strategic references for our moodboard meeting."
-   },
-   "create": {
+      "EN": "Time to read and review the history written so far. I will delve even deeper into your business to understand your pains and needs. I'll also be doing some incredible research for visual and strategic references for our moodboard meeting."
+    },
+    "create": {
       "PT": "Criar",
       "EN": "Create"
-   },
-   "createText": {
+    },
+    "createText": {
       "PT": "Todas as conversas, ideias e coisas que conversamos existiram para esse momento. É quando eu projeto a sua marca, criando soluções visuais para destacar sua marca em um mercado de alto nível.",
       "EN": "All the conversations and ideas and things we talked about existed for that moment. That's when I design your brand, creating visual solutions to highlight your brand in a high-end market."
-   },
-   "delivery": {
+    },
+    "delivery": {
       "PT": "Entregar",
       "EN": "Delivery"
-   },
-   "deliveryText": {
+    },
+    "deliveryText": {
       "PT": "O grand finale: colocar a sua marca no mundo. É quando eu envio todos os arquivos completos e finalizados, em seus mais variados formatos, para você aplicá-los na vida real.",
       "EN": "The grand finale: putting your brand on the world. That's when I send all the complete and finished files, in their most varied formats, for you to apply them in real life."
-   }
+    }
   },
-  "Contact":{
-      "title": {
-         "PT": ["Diga olá,", "Eu quero ouvir", "sua história."],
-         "EN": ["Say Hello,","I wanna listen","to your story."]
-      },
-      "contact" : {
-         "PT": ["Entre em contato através do formulário.", "Se preferir, envie um email para"],
-         "EN": ["Get in touch using the form.", "If you prefer, send an email to"]
-      }
+  "Contact": {
+    "title": {
+      "PT": ["Diga olá,", "Eu quero ouvir", "sua história."],
+      "EN": ["Say Hello,", "I wanna listen", "to your story."]
+    },
+    "contact": {
+      "PT": [
+        "Entre em contato através do formulário.",
+        "Se preferir, envie um email para"
+      ],
+      "EN": ["Get in touch using the form.", "If you prefer, send an email to"]
+    }
   },
   "Forms": {
-   "title": {
-      "PT" : "Informações pessoais",
-      "EN" : "Personal information"
-   },
-   "firstName": {
-      "PT" : "Nome",
-      "EN" : "First name"
-   },
-   "lastName": {
-      "PT" : "Sobrenome",
-      "EN" : "Last Name"
-   },
-   "email": {
-      "PT" : "Seu Email",
-      "EN" : "Your email"
-   },
-   "yourProject": {
-      "PT" : "Seu Projeto",
-      "EN" : "Your Project"
-   },
-   "yourHistory": {
-      "PT" : "Me fale sobre sua história",
-      "EN" : "Tell me about your story"
-   },
-   "Send": {
-      "PT" : "ENVIAR PEDIDO",
-      "EN" : "SEND YOUR REQUEST"
-   }
+    "title": {
+      "PT": "Informações pessoais",
+      "EN": "Personal information"
+    },
+    "firstName": {
+      "PT": "Nome",
+      "EN": "First name"
+    },
+    "lastName": {
+      "PT": "Sobrenome",
+      "EN": "Last Name"
+    },
+    "email": {
+      "PT": "Seu Email",
+      "EN": "Your email"
+    },
+    "yourProject": {
+      "PT": "Seu Projeto",
+      "EN": "Your Project"
+    },
+    "yourHistory": {
+      "PT": "Me fale sobre sua história",
+      "EN": "Tell me about your story"
+    },
+    "Send": {
+      "PT": "ENVIAR PEDIDO",
+      "EN": "SEND YOUR REQUEST"
+    }
   },
   "AboutMePag": {
-   "intro" : {
-      "PT": ["Meu nome é Bruno Ruscão, um designer especialista em", "marcas", "e", "identidade visual."],
-      "EN" : ["I'm Bruno Ruscão, a brazilian designer specialized in", "branding", "and" , "visual identity."]
-   }, 
-   "sub":{
-      "PT":"Ruscão Brands é o resultado de quase uma década de experiência em design, cujo foco tem sido em transformar histórias autênticas em marcas memoráveis.",
-      "EN":"Ruscão Brands is the result of almost a decade of experience in design, whose focus has been on transforming authentic stories into memorable brands."
-   },
-   "more":{
-      "PT" : ["Muito além de seus produtos e serviços, seus clientes buscam uma conexão emocional verdadeira com sua empresa. Eles não compram apenas seu produto, eles compram sua história. Não é sobre o que o você vende, é sobre quem você é.", "Uma identidade visual poderosa é capaz de mudar a história da sua empresa pra sempre.","Fortalece a imagem, amplifica a comunicação com o público e potencializa o poder de compra e escolha dos seus clientes, o que pode afetar positivamente o lucro da sua empresa.", "Tudo isso requer atitude, e claro, um trabalho corajoso de design."],
-      "EN" : ["Far beyond your products and services, your customers are looking for an emotional and true connection with your company. They don't just buy your product, they buy your story. It's not about what you sell, it's about who you are.","A powerful visual identity project is capable of changing the history of your company forever.", "Strengthens the image, amplifies communication with the public and enhances the consumer's power of choice and purchase, which can directly affect your company's revenue.", "This all requires attitude and, of course, courageous design work."]
-   },
-   "contact" : {
-      "title":{
-         "PT": "Eu quero ouvir sua história.",
-         "EN" : "I want to listen to your story."
+    "intro": {
+      "PT": [
+        "Meu nome é Bruno Ruscão, um designer especialista em",
+        "marcas",
+        "e",
+        "identidade visual."
+      ],
+      "EN": [
+        "I'm Bruno Ruscão, a brazilian designer specialized in",
+        "branding",
+        "and",
+        "visual identity."
+      ]
+    },
+    "sub": {
+      "PT": "Ruscão Brands é o resultado de quase uma década de experiência em design, cujo foco tem sido em transformar histórias autênticas em marcas memoráveis.",
+      "EN": "Ruscão Brands is the result of almost a decade of experience in design, whose focus has been on transforming authentic stories into memorable brands."
+    },
+    "more": {
+      "PT": [
+        "Muito além de seus produtos e serviços, seus clientes buscam uma conexão emocional verdadeira com sua empresa. Eles não compram apenas seu produto, eles compram sua história. Não é sobre o que o você vende, é sobre quem você é.",
+        "Uma identidade visual poderosa é capaz de mudar a história da sua empresa pra sempre.",
+        "Fortalece a imagem, amplifica a comunicação com o público e potencializa o poder de compra e escolha dos seus clientes, o que pode afetar positivamente o lucro da sua empresa.",
+        "Tudo isso requer atitude, e claro, um trabalho corajoso de design."
+      ],
+      "EN": [
+        "Far beyond your products and services, your customers are looking for an emotional and true connection with your company. They don't just buy your product, they buy your story. It's not about what you sell, it's about who you are.",
+        "A powerful visual identity project is capable of changing the history of your company forever.",
+        "Strengthens the image, amplifies communication with the public and enhances the consumer's power of choice and purchase, which can directly affect your company's revenue.",
+        "This all requires attitude and, of course, courageous design work."
+      ]
+    },
+    "contact": {
+      "title": {
+        "PT": "Eu quero ouvir sua história.",
+        "EN": "I want to listen to your story."
       },
-      "sub":{
-         "PT": "Vamos trabalhar juntos na estratégia visual do seu negócio e fazer do mundo um lugar mais bonito através da sua novíssima poderosa marca.",
-         "EN" : "We will work together on your brand strategy and make the world more beautiful through your newest yet strong brand."
+      "sub": {
+        "PT": "Vamos trabalhar juntos na estratégia visual do seu negócio e fazer do mundo um lugar mais bonito através da sua novíssima poderosa marca.",
+        "EN": "We will work together on your brand strategy and make the world more beautiful through your newest yet strong brand."
       },
-      "btn":{
-         "PT": "CONTATO",
-         "EN" : "CONTACT"
+      "btn": {
+        "PT": "CONTATO",
+        "EN": "CONTACT"
       }
-   }
+    }
+  },
+  "Projects": {
+    "title": {
+      "PT": "Projetos",
+      "EN": "Main projects"
+    },
+    "description": {
+      "PT": "Ruscão Brands is the result of almost a decade of experience in design, whose focus has been on.",
+      "EN": "Ruscão Brands is the result of almost a decade of experience in design, whose focus has been on."
+    }
   }
 }

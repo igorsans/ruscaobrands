@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import CasesStyle from "./Style.js";
 import ButtonB from "../Button/ButtonB.jsx";
 import { LangContext } from "../../../Context/LangProvider.jsx";
-import Biggies from "/Biggies.png";
 import casesList from "../../../Cases/cases.json";
 import { useNavigate } from "react-router-dom";
 
@@ -33,7 +32,7 @@ const Cases = ({ handleCaseChange, setInHome }) => {
           )
         )}
       </div>
-      <ButtonB text={langContext.texts.Cases.Btn[langContext.lang]} />
+      <ButtonB nav={() => navigate("/projects")} text={langContext.texts.Cases.Btn[langContext.lang]} />
     </CasesStyle>
   );
 };

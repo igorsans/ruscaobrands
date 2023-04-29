@@ -5,7 +5,8 @@ import Header from "../components/Header/Header";
 import Home from "../../pages/home/home";
 import CasePag from "../../pages/casePag/CasePag";
 import About from "../../pages/about/about";
-import LangProvider, { LangContext } from "../../Context/LangProvider";
+import { LangContext } from "../../Context/LangProvider";
+import Projects from "../../pages/projectsPag/Projects";
 
 const Routes = () => {
   const handleCaseChange = (obj) => {
@@ -34,6 +35,7 @@ const Routes = () => {
         />
         <Route path="cases" element={<CasePag setInHome={setInHome} />} />
         <Route path="aboutme" element={<About setInHome={setInHome} />} />
+        <Route path="projects" element={<Projects handleCaseChange={handleCaseChange} setInHome={setInHome} />}/>
       </Switch>
       <Footer inHome={inHome} />
     </BrowserRouter>
